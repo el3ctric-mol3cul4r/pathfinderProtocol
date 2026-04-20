@@ -1,0 +1,23 @@
+.grid-container {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+float: left;
+}
+
+.grid-item {
+    background-color: aquamarine;
+    border-color: black;
+    border-width: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+#nodes {
+    border: 2px solid black;
+    margin-left: 20px;
+    float: right;
+    padding: 60px;
+}
