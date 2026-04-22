@@ -4,48 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pathfinder</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-    <div class="master-div">
-        <div class="grid-container0">
-            <div id="grid-item01">
-                <p>Width:</p>
-                <p>Height:</p>
-            </div>
-            <div id="grid-item02">
-                <p>Start Coords:</p>
-                <p>End Coords:</p>
-            </div>
-            <div id="grid-item03">
-                <p>Wall Coords:</p>
-            </div>
+    <body>
+        <div id="gridcontrols">
+            <label for="x">Width</label>
+            <input type="number" id="x">
+            <br>
+            <label for="y">Height</label>
+            <input type="number" id="y">
+            <br>
+            <button type="button" onclick="createGrid()">Regenerate grid</button>
+            <br>
         </div>
-        <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-            <div class="grid-item">10</div>
-            <div class="grid-item">11</div>
-            <div class="grid-item">12</div>
-            <div class="grid-item">13</div>
-            <div class="grid-item">14</div>
-            <div class="grid-item">15</div>
-            <div class="grid-item">16</div>
-            <div class="grid-item">17</div>
-            <div class="grid-item">18</div>
-            <div class="grid-item">19</div>
-            <div class="grid-item">20</div>
+        <div id="grid">
+            <!---->
         </div>
-        <div id="nodes">
-            <p id="list">Visited Nodes</p>
+        <div id="startcontrols">
+            <label for="xStart">Start x-coordinate</label>
+            <input type="number" id="xStart">
+            <br>
+            <label for="yStart">Start y-coordinate</label>
+            <input type="number" id="yStart">
+            <br>
+            <button type="submit">Submit start coords</button>
+            <br>
         </div>
-    </div>
-</body>
+        <div id="endcontrols">
+            <label for="xEnd">End x-coordinate</label>
+            <input type="number" id="xEnd">
+            <br>
+            <label for="yEnd">End y-coordinate</label>
+            <input type="number" id="yEnd">
+            <br>
+            <button type="submit">Submit end coords</button>
+        </div>
+    </body>
 </html>
