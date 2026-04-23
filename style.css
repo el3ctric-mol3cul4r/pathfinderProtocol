@@ -9,3 +9,10 @@
     height: 40px;
     border: 1px solid black;
 }
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
